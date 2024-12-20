@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background-color: #3e65da;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        nav .links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav .links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1920x1080/?nature,technology') no-repeat center center/cover;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .hero a {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #3e65da;
+            background-color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .hero a:hover {
+            background-color: #3e65da;
+            color: #fff;
+        }
+
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">CLOUD<strong>ERY</strong></div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="About.html">About</a>
+            <a href="Login.html">Login</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>Welcome to CLOUD<strong>ERY</strong></h1>
+            <p>Your gateway to exploring innovation, connecting with support, and discovering the best resources to grow and thrive.</p>
+            <a href="#explore">Explore More</a>
+        </div>
+    </section>
+
+    <section class="content">
+        <h2>Discover Our Website</h2>
+        <p>Thank you for visiting our website! Here, you'll find everything you need to explore, learn, and connect. Whether you're here to discover more about us, reach out for support, or explore our resources, you're in the right place.</p>
+        <p>Use the navigation links above to start exploring our site.</p>
+    </section>
+</body>
+</html>
