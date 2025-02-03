@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div align="center">
+        <h1>View Page of Crud</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Gender</th>
+                    <th>Hobby</th>
+                    <th>City</th>
+                    <th>File</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% allRecord.map((val,index) => { %>
+                    <tr>
+                        <td><%= val?.id %></td>
+                        <td><%= val?.username %></td>
+                        <td><%= val?.useremail %></td>
+                        <td><%= val?.userpassword %></td>
+                        <td><%= val?.usergender %></td>
+                        <td><%= val?.userhobby %></td>
+                        <td><%= val?.usercity %></td>
+                        <td>
+                            <img src="<%= val.userimage %>" width="100">
+                        </td>
+                        <td>
+                            <a href="/crud/deleteUser?delId=<%= val?.id %>">Delete</a>
+                            <a href="/crud/editUser?editId=<%= val?.id %>">Edit</a>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+        <a href="/crud/add">Add</a>
+    </div>
+</body>
+
+</html>
